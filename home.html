@@ -3,8 +3,9 @@
 	<head>
 		<style>
 	.topnav {
-		  overflow: hidden;
-		  background-color: black;
+		overflow: hidden;
+		background-color: black;
+		transition: top 0.3s;
 	}
 
 	.topnav a {
@@ -83,7 +84,24 @@
             }   
        	 </style>
     </head>
-  	<body style="background-color:#000000">
+  	<body 
+		style="background-color:#000000">
+	</body>
+	<body>
+		<script>
+				var prevScrollpos = window.pageYOffset;
+				window.onscroll = function() {
+				var currentScrollPos = window.pageYOffset;
+				  if (prevScrollpos > currentScrollPos) {
+				    document.getElementById("navbar").style.top = "0";
+				  } else {
+				    document.getElementById("navbar").style.top = "-50px";
+				  }
+				  prevScrollpos = currentScrollPos;
+				}
+		</script>
+
 	</body>
   
 </html>
+
