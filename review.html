@@ -17,42 +17,33 @@
 						font-size: 20;
 						color: #88b2b4;
 					}
-				/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 15px;
-}
+				.column {
+  						float: left;
+  						width: 30%;
+  						padding: 15px;
+					}
 
 /* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: all;
-}
+			 	.row::after {
+  						content: "";
+  						display: table;
+  						clear: both;
+						}
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-  .column {
-    width: 80%;
-  }
-}
+					@media screen and (max-width:600px) {
+  				.column {
+   					 width: 90%;
+				}
+					}
 					.footer {
 	  					background-color: #f1f1f1;
 	  					padding: 10px;
 	  					text-align: center;
 					}
-					}
-					
 					.topnav {
 						overflow: hidden;
-						background-color: white;
+						background-color: #372E25;
 						transition: top 0.3s;
 					}
 				
@@ -98,13 +89,13 @@
 						<div class="topnav">
 							 <ul> <a href="home">Home</a> </ul>
 							 <ul> <a href="summary">Summary</a> </ul> 
-							 <ul> <a href="characters">Characters</a> </ul>
-							 <ul> <a class="active" href="review">Review</a> </ul>
+							 <ul> <a class="active" href="characters">Characters</a> </ul>
+							 <ul> <a href="review">Review</a> </ul>
 						</div>
 						
 									
 				
-					<div class="row">
+				<div class="row">
   					<div class="column">
     						<h2>Column</h2>
     							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
@@ -120,7 +111,6 @@
     							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
   					</div>
 				</div>
-	
 	
 					<div class="footer">
 	  					<p>Footer</p>
