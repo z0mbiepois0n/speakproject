@@ -1,171 +1,216 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-				<style>
-					.header {
-						padding: 10px;
-	 					text-align: center;
-						background: #372E25;
-						color: white;
-						font-size: 30px;
-						border: 2px white;
-	 					border-radius: 5px;
-					}
-				    h1 {
-					    text-align: center;
-						font-size: 40px;
-						color: white;
-				    }
-					h2 {
-	  					text-align: center;
-						font-size: 30px;
-						color: #372E25;
-					}
-				.column {
-  						float: left;
-  						width: 30%;
-  						padding: 15px;
-					}
+<html>
+    <head>
+        <style>
+            .header {
+                padding: 10px;
+                text-align: center;
+                background: #372E25;
+                color: white;
+                font-size: 30px;
+                border: 2px white;
+                border-radius: 5px;
+            }
+            h1 {
+                text-align: center;
+                font-size: 40px;
+                color: white;
+            }
+            h2 {
+                text-align: center;
+                font-size: 30px;
+                color: #372E25;
+            }
+            .column {
+                float: left;
+                width: 30%;
+                padding: 15px;
+            }
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            @media screen and (max-width: 600px) {
+                .column {
+                    width: 90%;
+                }
+            }
+            .columnb {
+                float: left;
+                width: 30%;
+                padding: 15px;
+            }
+            .rowb::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            @media screen and (max-width: 600px) {
+                .columnb {
+                    width: 90%;
+                }
+            }
+            .footer {
+                background-color: #372E25;
+                padding: 10px;
+                text-align: center;
+            }
+            .topnav {
+                overflow: hidden;
+                background-color: #372E25;
+                transition: top 0.3s;
+            }
+            .topnav a {
+                float: left;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                background-color: #372E25;
+            }
+            .topnav a:hover {
+                background-color: white;
+                color: #372E25;
+            }
+            .topnav a.active {
+                background-color: #A8C897;
+                color: white;
+            }
+        </style>
+    </head>
+    <head>
+        <style>
+            {
+            	            			html,body {
+            	             			yuji-syuku-regular {
+            	              				font-family: "Yuji Syuku", serif;
+            	              				font-weight: 400;
+            	              				font-style: normal;
+            	           			}
+        </style>
+    </head>
+    <body style="background-color: white"></body>
+    <body>
+        <div class="header">
+            <h1>Characters</h1>
+            <p style="font-size: 30px">
+                Info on some of the characters in Speak.
+            </p>
+        </div>
+        <div class="topnav">
+            <ul>
+                <a href="home">Home</a>
+            </ul>
+            <ul>
+                <a href="summary">Summary</a>
+            </ul>
+            <ul>
+                <a class="active" href="characters">Characters</a>
+            </ul>
+            <ul>
+                <a href="review">Review</a>
+            </ul>
+        </div>
 
-/* Clear floats after the columns */
-			 	.row::after {
-  						content: "";
-  						display: table;
-  						clear: both;
-						}
+        <div class="row">
+            <div class="column">
+                <h2
+                    style="
+                        margin-top: 33.2px !important;
+                        margin-bottom: 33.2px !important;
+                    "
+                >
+                    Mr. Freeman
+                </h2>
+                <p style="font-size: 20px; color: #372E25; margin-top: 20px">
+                    Mr. Freeman is the art teacher at Melindas school. Despite
+                    her struggling everywhere else she does well in art. In her
+                    school Mr. Freeman is one of the few teachers Melinda
+                    tolerates. Despite her silence her and Mr. Freeman have a
+                    type of understanding. Mr. Freeman is one of the supportive
+                    characters in the novel to Melinda.
+                </p>
+            </div>
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-					@media screen and (max-width:600px) {
-  				.column {
-   					 width: 90%;
-				}
-					}
+            <div class="column">
+                <h2 style="font-size: 40px !important">Melinda</h2>
+                <p style="font-size: 20px; color: #372E25">
+                    Melinda is the protaginist of the book. Shes a freshman and
+                    is already disliked by her classmates after called the cops
+                    at a party after being assulted. She's hardly ever speaks
+                    due to her truama. She struggles to find herself and friends
+                    with her issolation from her peers. Through out the book we
+                    see her grow and overcome her truama and make friends.
+                </p>
+            </div>
 
-					.columnb {
-  						float: left;
-  						width: 30%;
-  						padding: 15px;
-					}
+            <div class="column">
+                <h2
+                    style="
+                        margin-top: 33.2px !important;
+                        margin-bottom: 33.2px !important;
+                    "
+                >
+                    IT
+                </h2>
+                <p style="font-size: 20px; color: #372E25; margin-top: 20px">
+                    IT is the person who assulted Melinda. He is unfortatly an
+                    important charcter as her is the reason that lead to the
+                    place Melinda is. Fortantanly he is not mentioned often.
+                    Melinda struggles to reveal the truth about the vile
+                    creature IT is.
+                </p>
+            </div>
+        </div>
+        <div class="rowb">
+            <div class="columnb">
+                <h2>Racheal</h2>
+                <p style="font-size: 20px; color: #372E25">
+                    Racheal is Melinda ex best-friend who stops being Melindas
+                    friend after the party. She decides she hates Melinda and
+                    doesn't speak with her and ignores her even when Melinda is
+                    alone because of no one wanting to talk to her.
+                </p>
+            </div>
 
-/* Clear floats after the columns */
-			 	.rowb::after {
-  						content: "";
-  						display: table;
-  						clear: both;
-						}
+            <div class="columnb">
+                <h2>Heather</h2>
+                <p style="font-size: 20px; color: #372E25">
+                    Heather is one of Melinda few friends after most the school
+                    disliked Melinda. Having just moved to the city she doesn't
+                    know anyone and is desperate to get into populatity while
+                    Melinda doesn't want to. With their conflicting prioities
+                    and other things Melinda learns to find people to be friend
+                    who are the right people and are real friends.
+                </p>
+            </div>
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-					@media screen and (max-width:600px) {
-  				.columnb {
-   					 width: 90%;
-				}
-					}
-					.footer {
-	  					background-color: #372E25;
-	  					padding: 10px;
-	  					text-align: center;
-					}
-					.topnav {
-						overflow: hidden;
-						background-color: #372E25;
-						transition: top 0.3s;
-					}
-				
-					.topnav a {
-						  float: left;
-						  color: white;
-						  text-align: center;
-						  padding: 14px 16px;
-						  text-decoration: none;
-						  font-size: 17px;
-						  background-color: #372E25;
-					}
-				
-					.topnav a:hover {
-				 		 background-color: white;
-				 		 color: #372E25;
-					}
-				
-					.topnav a.active {
-						  background-color: #A8C897;
-				 		 color: white;
-					}
-				</style> 
-		</head>
-		 	<head>    
-	        		<style>{            
-	            			html,body {
-	             			yuji-syuku-regular {
-	              				font-family: "Yuji Syuku", serif;
-	              				font-weight: 400;
-	              				font-style: normal;
-	           			 }   
-	       	 		</style>
-	    		</head>
-	  			<body style="background-color: white">
-				</body>
-			<body>
-					<div class="header">
-	  					<h1>Characters</h1>
-						<p style="font-size: 30px;">Info on some of the characters in Speak.</p>
-					</div>
-	
-<!-- Top Navigation Menu -->
-						<div class="topnav">
-							 <ul> <a href="home">Home</a> </ul>
-							 <ul> <a href="summary">Summary</a> </ul> 
-							 <ul> <a class="active" href="characters">Characters</a> </ul>
-							 <ul> <a href="review">Review</a> </ul>
-						</div>
-						
-				
-				<div class="row">
-  					<div class="column">
-    						<h2 style="margin-top: 33.2px !important; margin-bottom: 33.2px !important">Mr. Freeman</h2>
-    							<p style="font-size:20px; color:#372E25; margin-top: 20px;">Mr. Freeman is the art teacher at Melindas school. Despite her struggling everywhere else she does well in art. In her school Mr. Freeman is one of the few teachers Melinda tolerates and despite her silence her and Mr. Freeman have a type of understanding. Mr. Freeman is one of the supportive characters in the novel to Melinda.</p>
-  					</div>
-  
-  					<div class="column">
-    						<h2 style="font-size: 40px !important">Melinda</h2>
-    							<p style="font-size:20px; color:#372E25;">Melinda is the protaginist of the book. Shes a freshman and is already disliked by her classmates after called the cops at a party after being assulted. She's hardly ever speaks due to her truama. She struggles to find herself and friends with her issolation from her peers. Through out the book we see her grow and overcome her truama and make friends.</p>
-  					</div>
+            <div class="columnb">
+                <h2>Ivy</h2>
+                <p style="font-size: 20px; color: #372E25">Ivy</p>
+            </div>
+        </div>
 
-  					<div class="column">
-    						<h2 style="margin-top: 33.2px !important; margin-bottom: 33.2px !important">IT</h2>
-    							<p style="font-size:20px; color:#372E25; margin-top: 20px">IT is the person who assulted Melinda. He is unfortatly an important charcter as her is the reason that lead to the place Melinda is. Fortantanly he is not mentioned often. Melinda struggles to reveal the truth about the vile creature IT is.</p>
-  					</div>
-				</div>
-				<div class="rowb">
-  					<div class="columnb">
-    						<h2>Racheal</h2>
-    							<p style="font-size:20px; color:#372E25;">Racheal is Melinda ex best-friend who stops being Melindas friend after the party. She decides she hates Melinda and doesn't speak with her and ignores her even when Melinda is alone because of no one wanting to talk to her.</p>
-  					</div>
-  
-  					<div class="columnb">
-    						<h2>Heather</h2>
-    							<p style="font-size:20px; color:#372E25;">Heather is one of Melinda few friends after most the school disliked Melinda. Having just moved to the city she doesn't know anyone and is desperate to get into populatity while Melinda doesn't want to. With their conflicting prioities and other things Melinda learns to find people to be friend who are the right people and are real friends.</p>
-  					</div>
-  
-  					<div class="columnb">
-    						<h2>Ivy</h2>
-    							<p style="font-size:20px; color:#372E25;">Ivy</p>
-  					</div>
-				</div>
-	
-					<div class="footer">
-	  					<p style="color:white">Site made by Marlowe Mauer <br> no copy right bc that cost money <br> pls give me a good grade miss lagoe :)</p>
-					</div>
-				<script>
-				var prevScrollpos = window.pageYOffset;
-				window.onscroll = function() {
-				var currentScrollPos = window.pageYOffset;
-				  if (prevScrollpos > currentScrollPos) {
-				    document.getElementById("topnav").style.top = "0";
-				  } else {
-				    document.getElementById("topnav").style.top = "-50px";
-				  }
-				  prevScrollpos = currentScrollPos;
-				}
-		</script>
-			</body>
-	</html>
+        <div class="footer">
+            <p style="color: white">
+                Site made by Marlowe Mauer <br />
+                no copy right bc that cost money <br />
+                pls give me a good grade miss lagoe :)
+            </p>
+        </div>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("topnav").style.top = "0";
+              } else {
+                document.getElementById("topnav").style.top = "-50px";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+        </script>
+    </body>
+</html>
