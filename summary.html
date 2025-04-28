@@ -2,37 +2,38 @@
 <html>
     <head>
         <style>
-            .header {
-                padding: 10px;
+            h1 {
+                color: white;
+                font-family: "Lucida Sans Unicode";
+                font-size: 40px;
+                font-style: normal;
+                font-variant: normal;
+                font-weight: 700;
+                line-height: 44px;
                 text-align: center;
-                background: #A8C897;
+            }
+
+            h2 {
                 color: #372E25;
+                font-family: "Lucida Sans Unicode";
                 font-size: 30px;
-                border: 2px #A8C897;
-                border-radius: 5px;
-            }
-            .column {
-                float: left;
-                width: 30%;
-                padding: 15px;
-            }
-
-            .row::after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-
-        @media screen and (max-width: 600px) {
-            .column {
-                width: 90%;
-            }
-		}
-            .footer {
-                background-color: #A8C897;
-                padding: 10px;
+                font-style: normal;
+                font-variant: normal;
+                font-weight: 700;
+                line-height: 33px;
                 text-align: center;
             }
+
+            h3 {
+                color: #372E25;
+                font-family: "Lucida Sans Unicode";
+                font-size: 20px;
+                font-style: normal;
+                font-variant: normal;
+                font-weight: 400;
+                line-height: 22px;
+            }
+
             .topnav {
                 overflow: hidden;
                 background-color: white;
@@ -46,79 +47,70 @@
                 padding: 14px 16px;
                 text-decoration: none;
                 font-size: 17px;
-                background-color: white;
             }
 
             .topnav a:hover {
                 background-color: #A8C897;
-                color: #372E25;
+                color: 372E25;
             }
 
             .topnav a.active {
                 background-color: #A8C897;
-                color: #372E25;
+                color: white;
             }
-            h1 {
-				color: white;
-                font-family: "Lucida Sans Unicode";
-                font-size: 40px;
-                font-style: normal;
-                font-variant: normal;
-                font-weight: 700;
-                line-height: 44px;
-				text-align: center;
+
+            .header {
+                padding: 10px;
+                text-align: center;
+                background: #A8C897;
+                color: white;
+                font-size: 45px;
+                border: 2px #A8C897;
+                border-radius: 5px;
             }
-			h2 {
-				color: #372E25;
-				font-family: "Lucida Sans Unicode";
-				font-size: 30px;
-				font-style: normal;
-				font-variant: normal;
-				font-weight: 700;
-				line-height: 33px;
-				text-align: center;
-			}
-	   		h3 {
-				color: #372E25;
-				font-family: "Lucida Sans Unicode";
-				font-size: 20px;
-				font-style: normal;
-				font-variant: normal;
-				font-weight: 400;
-				line-height: 22px;
-			}
-            p {
-                font-family: "Lucida Sans Unicode";
-                font-size: 16px;
-                font-style: normal;
-                font-variant: normal;
-                font-weight: 400;
-                line-height: 17.6px;
+
+            .reviewbody {
+                padding: 10px;
+                text-align: center;
             }
-            blockquote {
-                font-family: "Lucida Sans Unicode";
-                font-size: 21px;
-                font-style: normal;
-                font-variant: normal;
-                font-weight: 400;
-                line-height: 30px;
+
+            .footer {
+                background-color: #A8C897;
+                padding: 10px;
+                text-align: center;
             }
-            pre {
-                font-family: "Lucida Sans Unicode";
-                font-size: 13px;
-                font-style: normal;
-                font-variant: normal;
-                font-weight: 400;
-                line-height: 18.5714px;
+
+            .topnav {
+                overflow: hidden;
+                background-color: white;
+                transition: top 0.3s;
+            }
+
+            .topnav a {
+                float: left;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                background-color: #A8C897;
+            }
+
+            .topnav a:hover {
+                background-color: #372E25;
+                color: white;
+            }
+
+            .topnav a.active {
+                background-color: #372E25;
+                color: white;
             }
         </style>
     </head>
-    <body style="background-color: white"></body>
-    <body>
+    <body style="background-color: white">
         <div class="header">
-            <h2>Header</h2>
+            <h1>Summary</h1>
         </div>
-
         <div class="topnav">
             <ul>
                 <a href="home">Home</a>
@@ -130,61 +122,41 @@
                 <a href="characters">Characters</a>
             </ul>
             <ul>
-                <a href="review">Review</a>
+                <a  href="review">Review</a>
             </ul>
         </div>
-
-        <div class="row">
-            <div class="column">
-                <h2>Column</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Maecenas sit amet pretium urna. Vivamus venenatis velit nec
-                    neque ultricies, eget elementum magna tristique. Quisque
-                    vehicula, risus eget aliquam placerat, purus leo tincidunt
-                    eros, eget luctus quam orci in velit. Praesent scelerisque
-                    tortor sed accumsan convallis.
-                </p>
-            </div>
-
-            <div class="column">
-                <h2>Column</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Maecenas sit amet pretium urna. Vivamus venenatis velit nec
-                    neque ultricies, eget elementum magna tristique. Quisque
-                    vehicula, risus eget aliquam placerat, purus leo tincidunt
-                    eros, eget luctus quam orci in velit. Praesent scelerisque
-                    tortor sed accumsan convallis.
-                </p>
-            </div>
-
-            <div class="column">
-                <h2>Column</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Maecenas sit amet pretium urna. Vivamus venenatis velit nec
-                    neque ultricies, eget elementum magna tristique. Quisque
-                    vehicula, risus eget aliquam placerat, purus leo tincidunt
-                    eros, eget luctus quam orci in velit. Praesent scelerisque
-                    tortor sed accumsan convallis.
-                </p>
-            </div>
+        <div class="reviewbody">
+            <h2 style="margin: auto">Summary</h2>
+            <h3 style="text-align: left; text-indent: 50px;">
+                Speak is a novel about Melinda Sordino a freshman in High School. 
+				After being assulted at a party the summer before the year started, 
+				she called the cops causing the party to end and subsequently
+				causing her classmates to dislike her leaving her without friends
+				and isolated.
+            </h3>
+			<h3 style="text-align: left; text-indent: 50px;">
+                Throughout the book Melinda must learn to gain the strength to speak
+				about what happened to her. She also must learn to find true friends 
+				and how to find a way to express herself even if it isn't vocally. 
+	    	</h3>
         </div>
-
         <div class="footer">
-            <p>Footer</p>
+            <p style="color: white">
+                Site made by Marlowe Mauer <br />
+                no copy right bc that cost money <br />
+                pls give me a good grade Mrs Lagoe :)
+            </p>
         </div>
         <script>
             var prevScrollpos = window.pageYOffset;
             window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-              if (prevScrollpos > currentScrollPos) {
-                document.getElementById("topnav").style.top = "0";
-              } else {
-                document.getElementById("topnav").style.top = "-50px";
-              }
-              prevScrollpos = currentScrollPos;
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("topnav").style.top = "0";
+                } else {
+                    document.getElementById("topnav").style.top = "-50px";
+                }
+                prevScrollpos = currentScrollPos;
             }
         </script>
     </body>
